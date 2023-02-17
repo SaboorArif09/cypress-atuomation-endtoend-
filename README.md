@@ -1,1 +1,1 @@
-# cypress-atuomation-endtoend-
+# cypress-endtoend-atuomation

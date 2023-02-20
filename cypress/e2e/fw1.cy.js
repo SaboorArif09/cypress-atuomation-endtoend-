@@ -4,7 +4,7 @@ import HomePage from "../e2e/PageObjectModel/HomePage"
 import ProductPage from "./PageObjectModel/ProductPage"
 
 
-describe('template spec', () => {
+describe('framework spec', () => {
     const homePage=new HomePage
     const productPage=new ProductPage
     beforeEach( () => {

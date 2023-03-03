@@ -12,6 +12,10 @@ class HomePage {
         return cy.get(':nth-child(4) > .ng-untouched')
     }
 
+    getEditBox(){
+        return cy.get("input[name=name]:nth-child(2)")
+    }
+
     getEnterpreneur(){
         return cy.get('#inlineRadio3')
     }

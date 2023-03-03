@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
-import HomePage from "../e2e/PageObjectModel/HomePage"
-import ProductPage from "./PageObjectModel/ProductPage"
+import HomePage from "../support/PageObjectModel/HomePage"
+import ProductPage from "../support/PageObjectModel/ProductPage"
 
 
 describe('My framework spec', () => {
@@ -18,7 +18,7 @@ describe('My framework spec', () => {
             homePage.getName().type(data.name)
             homePage.getGender().select(data.gender)
             homePage.getTwowayBinding().should("have.value", data.name)
-            cy.get("input[name=name]:nth-child(2)").should("have.attr", "minlength", 2)
+            homePage.getEditBox().should("have.attr", "minlength", 2)
             homePage.getEnterpreneur().should("be.disabled")
             
         })
